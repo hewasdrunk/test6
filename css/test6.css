@@ -1,0 +1,62 @@
+html{font-size:62.5%;}
+body,ul,li,img,p{margin:0;padding:0;}
+.header{position:fixed;top:0;width:100%;border-bottom:0.1rem solid #ddd;}
+
+
+.header-top{padding:0.5rem 0;background:#5fc0cd;}
+.header-avator{background:cadetblue;text-align:center;width:50%;margin:0 auto;
+    border-radius:0.8rem;font-size: 100%;}
+.header-avator>button{padding:1rem;width:50%;border-radius:0.8rem;
+    white-space: nowrap;}
+@media screen and (max-width: 960px){
+    .header-avator>button{font-size:1rem;}
+}
+@media screen and (max-device-width:960px){
+    .header-avator>button{font-size:2rem;}
+}
+@media screen and (min-width:960px) and (max-width:1200px){
+    .header-avator>button{font-size:3rem;}
+}
+@media screen and (min-width:1200px){
+    .header-avator>button{font-size:3rem;}
+}
+.header-avator>button:first-child{
+    background-color:cadetblue;color:#fff;font-weight: 600;cursor:pointer;
+    outline:none;border:none;}
+
+.header-avator>button:last-child{
+    background-color:#fff;color:#5fc0cd;font-weight: 600;cursor:pointer;
+    outline:none;border:none;}
+.header-top>a>img{position:absolute;right:1rem;top:1rem;bottom:1rem;max-width:2.8rem;cursor:pointer;}
+.content{margin-top:8rem;list-style:none;}
+.content>li{padding:1.5rem;border-bottom:0.1rem solid #ddd;}
+.content>li>span>img{max-height:2rem;width:1.3rem;vertical-align:baseline;margin-right: 1rem;}
+.title{font-size:2rem;color:slategray;font-weight:600;}
+.content>li>p{padding:1rem 0;display:flex;line-height: 3rem;}
+.date{font-size:2rem;color:#000;margin:0 2.5rem;flex:2;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+.price{font-size:2.1rem;color:#ff0000;flex:1;padding:0 3rem 0 0 ;
+    text-align:right;white-space: nowrap;}
+
+.return{text-decoration: none;cursor:pointer;flex:1;max-width: 2rem;}
+
+.footer{
+    position:fixed;bottom:0;width:100%;display:flex;background:#fff;
+    border-top:0.1rem solid #ddd;
+    justify-content:center;}
+
+.footer>img{max-width:3.5rem;flex:1;margin:1rem;}
+.footer>div{margin:0 3rem;}
+.footer>div>a{text-decoration:none;}
+.footer>div>a>p{padding:1rem 0;text-align:center;}
+.fontblue{font-size:1rem;color:#5fc0cd;font-weight: 600;}
+.fontgray{font-size:1rem;color:slategray;font-weight: 600;}
+.footer>div:first-child{padding:1rem 0 0 0;}
+.footer>div:last-child{padding:1rem 0 0 0;}
+.footer-center{background:#5fc0cd;border-radius:50%;padding:2rem;}
+
+/*---------下拉列表-----------*/
+
+.nav{display:flex;vertical-align: baseline;}
+.nav>select{flex:1;width:30%;padding:1rem;font-size: 1.8rem;border:none;border-right:0.1rem solid #ddd;}
